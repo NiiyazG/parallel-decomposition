@@ -1,0 +1,15 @@
+{
+  "format": 1,
+  "nodes": [
+    "T1",
+    "T2"
+  ],
+  "edges": [],
+  "waves": [
+    [
+      "T1",
+      "T2"
+    ]
+  ],
+  "max_parallel": 2
+}

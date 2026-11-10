@@ -1,0 +1,30 @@
+{
+  "run_id": "example-001",
+  "max_parallel": 2,
+  "tasks": [
+    {
+      "id": "T1",
+      "goal": "Audit terminology and public documentation risks.",
+      "inputs": [{"name": "brief", "source": "snapshot:brief.txt"}],
+      "outputs": [{"name": "report", "type": "json", "path": "outputs/T1.json"}],
+      "depends_on": [],
+      "resources": [{"id": "snapshot:brief.txt", "mode": "read"}],
+      "done_criteria": ["Report contains evidence and at least one executed check."],
+      "idempotent": true,
+      "requires_approval": false,
+      "max_retries": 1
+    },
+    {
+      "id": "T2",
+      "goal": "Audit acceptance criteria and missing test cases.",
+      "inputs": [{"name": "brief", "source": "snapshot:brief.txt"}],
+      "outputs": [{"name": "report", "type": "json", "path": "outputs/T2.json"}],
+      "depends_on": [],
+      "resources": [{"id": "snapshot:brief.txt", "mode": "read"}],
+      "done_criteria": ["Report contains evidence and at least one executed check."],
+      "idempotent": true,
+      "requires_approval": false,
+      "max_retries": 1
+    }
+  ]
+}
