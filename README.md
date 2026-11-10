@@ -2,6 +2,8 @@
 
 Проверяемая оркестрация сложных задач: планирование DAG, immutable snapshots, реальные вызовы `delegate_task`, приёмка артефактов и финальная интеграция.
 
+![Обзор Parallel Decomposition для Hermes Agent](assets/parallel-decomposition-overview.png)
+
 ## Установка
 
 Скопируйте каталог `parallel-decomposition` в `$HERMES_HOME/skills/` (на Windows обычно `%LOCALAPPDATA%\\hermes\\skills\\`). Скилл не требует сторонних Python-пакетов и совместим с Python 3.9+.
